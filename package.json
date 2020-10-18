@@ -1,0 +1,33 @@
+{
+  "name": "image-store",
+  "version": "1.0.0",
+  "description": "backend api for the image project",
+  "main": "bin/www.js",
+  "scripts": {
+    "start": "node build/bin/www",
+    "dev": "nodemon --exec babel-node src/bin/www",
+    "build": "babel src --out-dir build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "*",
+    "cloudinary": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "multer": "*"
+  }
+}
